@@ -1,7 +1,9 @@
 <?php
+namespace Test;
+
 use Illuminate\Support;  // https://laravel.com/docs/5.8/collections - provides the collect methods & collections class
 use LSS\Array2Xml;
-require_once('classes/Exporter.php');
+
 
 class Controller {
 
@@ -11,7 +13,7 @@ class Controller {
 
     public function export($type, $format) {
         $data = [];
-        $exporter = new Exporter();
+        $exporter = new \Test\Exporter();
         switch ($type) {
             case 'playerstats':
                 $searchArgs = ['player', 'playerId', 'team', 'position', 'country'];

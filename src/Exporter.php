@@ -1,4 +1,5 @@
 <?php
+namespace Test;
 use Illuminate\Support;
 use LSS\Array2Xml;
 
